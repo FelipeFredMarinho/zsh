@@ -1,0 +1,53 @@
+
+## Prompt setup
+
+# Colors
+local white="%F{#FFFFFF}"
+local red="%F{#FF0000}"
+local green="%F{#00FF00}"
+local cyan="%F{#0096FF}"
+local magenta="%F{#FF00FF}"
+local indigo="%F{#3F00FF}"
+local closeColor="%f"
+
+# Symbols
+local skull=$white" ☠"$closeColor
+local diamond=$red"♦"$closeColor
+local arrow=$cyan" ➜ "$closeColor
+
+# Prompt vars
+local user=$green" %n"
+local caoz=$diamond$white"CaoZ"$diamond
+local machine=$green"%m:"
+local pwd=$magenta" %~/"
+
+# Rprompt vars
+local time=$green"%D{%H:%M%P}"
+local date=$red" %D{%d/%m/%Y}"
+
+# 
+#PS0='Teste'
+#PROMPT='%n@%m'
+#PS1
+#PROMPT="
+#"$user$diamond$machine$skull"
+#"$pwd$arrow" "$closeColor
+
+#PROMPT="
+# "$caoz" [ "$time" ]"$date$skull"
+#"$pwd$arrow" "$closeColor
+
+PROMPT="
+"$date" "$caoz$green" [ "$time" ]"$skull"
+"$pwd$arrow" "$closeColor
+
+#PROMPT="
+# "$caoz" [ "$time" ]"$date$skull"
+#"$pwd$arrow" "$closeColor
+
+#PS1="${FG[237]}\${(l.\$(afmagic_dashes)..-.)}%{$reset_color%} ${FG[032]}%~\$(git_prompt_info)\$(hg_prompt_info) ${FG[105]}%(!.#.»)%{$reset_color%} "
+#PS2=$prompt_newline$COLOR5'%~/'$GRAD0 ' %(!.#.->) ' # $\u2620'
+# %(!.#.->) ternary operator
+#PS1='\n'
+#RPROMPT="[ "$time$date" ]"$closeColor
+#RPROMPT="%F{#FFFFFF}%n@%m%f"

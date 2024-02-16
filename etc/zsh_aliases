@@ -1,0 +1,12 @@
+#!/bin/sh
+
+alias ls='ls -AF --group-directories-first --color=auto'
+alias lsr='ls -ARF --group-directories-first --color=auto'
+alias lls='ls -AlF --group-directories-first --color=auto'
+alias lst='ls -AltF --group-directories-first --color=auto'
+
+# Confirm command
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'

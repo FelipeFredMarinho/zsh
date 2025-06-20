@@ -4,9 +4,9 @@
 #promptinit
 #prompt fire red magenta blue white white white
 
-setopt histignorealldups sharehistory
+setopt histignorealldups sharehistory histignorespace
 
-export TZ="Europe/Prague"
+#export TZ="Europe/Prague"
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -39,7 +39,8 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/etc/zsh_aliases
 source ~/.config/zsh/zsh-prompts/prompt1
 source ~/.config/zsh/etc/zsh_highlighting
+

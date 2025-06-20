@@ -10,3 +10,20 @@ alias lst='ls -AltF --group-directories-first --color=auto'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+
+#
+alias micmute='wpctl set-mute @DEFAULT_SOURCE@ toggle'
+
+# 
+alias discord='flatpak run com.discordapp.Discord'
+alias steam='
+if mountpoint -q /mnt; then 
+    if [[ -d /mnt/SteamLibrary ]]; then 
+        flatpak run --filesystem=/mnt com.valvesoftware.Steam
+        return
+    fi 
+fi
+flatpak run com.valvesoftware.Steam'
+
+#alias steam='flatpak run --filesystem=/mnt com.valvesoftware.Steam'
+

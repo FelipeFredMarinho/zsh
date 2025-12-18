@@ -4,6 +4,7 @@ alias ls='ls -AF --group-directories-first --color=auto'
 alias lsr='ls -ARF --group-directories-first --color=auto'
 alias lls='ls -AlF --group-directories-first --color=auto'
 alias lst='ls -AltF --group-directories-first --color=auto'
+alias grep='grep --colour=auto'
 
 # Confirm command
 
@@ -16,14 +17,5 @@ alias micmute='wpctl set-mute @DEFAULT_SOURCE@ toggle'
 
 # 
 alias discord='flatpak run com.discordapp.Discord'
-alias steam='
-if mountpoint -q /mnt; then 
-    if [[ -d /mnt/SteamLibrary ]]; then 
-        flatpak run --filesystem=/mnt com.valvesoftware.Steam
-        return
-    fi 
-fi
-flatpak run com.valvesoftware.Steam'
-
 #alias steam='flatpak run --filesystem=/mnt com.valvesoftware.Steam'
 

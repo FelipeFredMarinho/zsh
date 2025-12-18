@@ -20,6 +20,10 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
+# Bash-like navigation
+autoload -U select-word-style
+select-word-style bash
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -43,4 +47,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source ~/.config/zsh/etc/zsh_aliases
 source ~/.config/zsh/zsh-prompts/prompt1
 source ~/.config/zsh/etc/zsh_highlighting
+source ~/.config/zsh/etc/functions.sh
 

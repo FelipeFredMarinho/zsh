@@ -3,7 +3,7 @@
 alias ls='ls -AF --group-directories-first --color=auto'
 alias lr='ls -ARF --group-directories-first --color=auto'
 alias ll='ls -AlF --group-directories-first --color=auto'
-alias lt='ls -AltF --group-directories-first --color=auto'
+alias lt='ls -AltF --sort=time --group-directories-first --color=auto'
 alias grep='grep --colour=auto'
 
 # Confirm command

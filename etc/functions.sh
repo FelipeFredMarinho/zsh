@@ -8,21 +8,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-function dspace() {
-  if [[ -z "$1" ]]; then
-    du -sh -- * .*
-    # command du -sh -- * .[^.]* ..?*
-    return
-  fi
-
-  du -sh "$1"/* "$1"/.*
-}
-
-
 function steam() {
-  if mountpoint -q /mnt; then
-    if [[ -d /mnt/SteamLibrary ]]; then
-      flatpak run --filesystem=/mnt com.valvesoftware.Steam
+  if mountpoint -q /media; then
+    if [[ -d /media/SteamLibrary ]]; then
+      flatpak run --filesystem=/media com.valvesoftware.Steam
       return
     fi
   fi

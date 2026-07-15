@@ -3,7 +3,7 @@
 #/usr/bin/wireplumber
 
 if [[ -z "$DISPLAY" ]] && [[ "$XDG_VTNR" = 1 ]]; then
-	exec Hyprland
+	exec dbus-run-session start-hyprland
 fi
 
 if [[ -z "$DISPLAY" ]] && [[ -d "$XORG" ]] && [[ ! -z "$XAUTHORITY" ]] && [[ "$XDG_VTNR" = 1 ]]; then

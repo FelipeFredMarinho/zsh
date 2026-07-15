@@ -5,6 +5,7 @@
 #prompt fire red magenta blue white white white
 
 setopt histignorealldups sharehistory histignorespace
+typeset -U path
 
 #export TZ="Europe/Prague"
 

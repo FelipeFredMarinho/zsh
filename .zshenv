@@ -1,11 +1,14 @@
+export ZDOTDIR=~/.config/zsh
 export DOTCONFIG=~/.config
-
-if [[ -z "$EDITOR" ]]; then
-  export EDITOR=nvim
-fi
+export DOTFILES=~/.config/dotfiles/
+export EDITOR=nvim
 
 #. "$HOME/.cargo/env"
-#export PATH="$PATH:$(go env GOPATH)/bin:.local/bin"
+#export PATH="$PATH:$(go env GOPATH)/bin"
+
+# if [[ -z "$" ]]; then
+export PATH="$PATH:~/.local/bin"
+# fi
 
 if [[ -f "$HOME/.Xauthority" ]]; then
   XORG=$HOME/.config/Xorg
